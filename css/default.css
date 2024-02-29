@@ -81,5 +81,27 @@ fieldset {
 	margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+	html {
+		--container: 640px;
+	}
+}
+
 @media screen and (min-width: 768px) {
+	html {
+		--padding-container: 64px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	html {
+		--container: 960px;
+		--padding-container: 32px;
+	}
+}
+
+@media screen and (min-width: 1360px) {
+	html {
+		--container: 1290px;
+	}
 }

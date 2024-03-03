@@ -9,11 +9,17 @@
 
 .navigation__list {
 	display: flex;
-	padding:  0 calc(100vw / 2 - var(--container) / 2);
+	padding: 0 calc(100vw / 2 - var(--container) / 2);
 	overflow-x: auto;
 	overflow-y: hidden;
 	flex-wrap: nowrap;
 	gap: 8px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.navigation__list::-webkit-scrollbar {
+	display: none;
 }
 
 .navigation__button {
@@ -107,4 +113,3 @@
 		background-position: 14px center;
 	}
 }
-

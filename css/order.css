@@ -1,0 +1,119 @@
+.order {
+	position: relative;
+}
+
+.order__wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 16px 10px;
+}
+
+.order__wrap-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	outline: none;
+}
+
+.order__wrap-title:after {
+	content: "";
+	position: absolute;
+	inset: 0; /* Задает позицию сразу по 4 параметрам */
+	outline: 3px solid "transparent";
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	pointer-events: none;
+}
+
+.order__wrap-title:focus-visible:after {
+	outline: 3px solid #f86310;
+}
+
+@supports not selector(::focus-visible) {
+	.order__wrap-title:focus:after {
+		outline: 3px solid #f86310;
+	}
+}
+
+.order_open .order__wrap_title {
+	margin-bottom: 8px; /* !todo optimize */
+}
+
+.order__title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 100%;
+}
+
+.order__count {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+	line-height: 14px;
+	border-radius: 6px;
+	width: 32px;
+	height: 16px;
+	background-color: #f2f2f3;
+}
+
+.order__wrap_list {
+	display: none;
+}
+
+.order_open .order__wrap_list {
+	display: block;
+}
+
+.order__list {
+	margin-bottom: 13px;
+}
+
+.order__total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 12px;
+	line-height: 130%;
+	margin-bottom: 19px;
+}
+
+.order__submit {
+	font-size: 12px;
+	padding: 9px;
+	width: 100%;
+	border-radius: 8px;
+	background-color: #ff7020;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.order__wrap-appeal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.order__appeal {
+	background-image: url(../icons/delivery.png);
+	background-size: 24px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-size: 10px;
+	padding: 5px 0 5px 32px;
+	line-height: 14px;
+}
+
+.order__close {
+	font-size: 10px;
+	color: #b1b1b1;
+	line-height: 14px;
+}

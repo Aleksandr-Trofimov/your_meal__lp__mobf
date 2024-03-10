@@ -1,77 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru-en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Your meal</title>
 
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="icons/favicon/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="icons/favicon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="icons/favicon/favicon-16x16.png"
-		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png" />
 		<link rel="manifest" href="/site.webmanifest" />
-		<link
-			rel="mask-icon"
-			href="icons/favicon/safari-pinned-tab.svg"
-			color="#5bbad5"
-		/>
+		<link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 		<meta name="msapplication-TileColor" content="#d0cf0e" />
 		<meta name="theme-color" content="#ffffff" />
 
 		<!-- Чтобы не скакал текст при загрузке сайта -->
 
-		<link
-			rel="preload"
-			href="fonts/nunito-v26-latin-regular.woff2"
-			as="font"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="fonts/nunito-v26-latin-600.woff2"
-			as="font"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="fonts/nunito-v26-latin-800.woff2"
-			as="font"
-			crossorigin
-		/>
+		<link rel="preload" href="fonts/nunito-v26-latin-regular.woff2" as="font" crossorigin />
+		<link rel="preload" href="fonts/nunito-v26-latin-600.woff2" as="font" crossorigin />
+		<link rel="preload" href="fonts/nunito-v26-latin-800.woff2" as="font" crossorigin />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<svg
-					class="header__logo"
-					viewBox="0 0 199 44"
-					role="img"
-					aria-label="Логотип YourMeal"
-				>
+				<svg class="header__logo" viewBox="0 0 199 44" role="img" aria-label="Логотип YourMeal">
 					<use href="images/sprite.svg#logo"></use>
 				</svg>
 				<div class="header__title-container">
-					<h1 class="header__title">
-						<span class="header__title-text">Только самые </span
-						><span class="header__title-text header__title-text_red"
-							>сочные бургеры!</span
-						>
-					</h1>
+					<h1 class="header__title"><span class="header__title-text">Только самые </span><span class="header__title-text header__title-text_red">сочные бургеры!</span></h1>
 					<p class="header__appeal">Бесплатная доставка от <span>599₽</span></p>
 				</div>
 			</div>
@@ -82,67 +39,86 @@
 				<div class="container navigation__container">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<button
-								class="navigation__button navigation__button_burger navigation__button_active"
-							>
-								Бургеры
-							</button>
+							<button class="navigation__button navigation__button_burger navigation__button_active">Бургеры</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_snack">
-								Закуски
-							</button>
+							<button class="navigation__button navigation__button_snack">Закуски</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_hot-dog">
-								Хот-доги
-							</button>
+							<button class="navigation__button navigation__button_hot-dog">Хот-доги</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_combo">
-								Комбо
-							</button>
+							<button class="navigation__button navigation__button_combo">Комбо</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_shawarma">
-								Шаурма
-							</button>
+							<button class="navigation__button navigation__button_shawarma">Шаурма</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_pizza">
-								Пицца
-							</button>
+							<button class="navigation__button navigation__button_pizza">Пицца</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_wok">
-								Вок
-							</button>
+							<button class="navigation__button navigation__button_wok">Вок</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_dessert">
-								Десерты
-							</button>
+							<button class="navigation__button navigation__button_dessert">Десерты</button>
 						</li>
 						<li class="navigation__item">
-							<button class="navigation__button navigation__button_sauce">
-								Соусы
-							</button>
+							<button class="navigation__button navigation__button_sauce">Соусы</button>
 						</li>
 					</ul>
 				</div>
 			</nav>
 
 			<section class="catalog">
-				<div class="container">
+				<div class="container catalog__container">
 					<div class="catalog__order order order_open">
 						<section class="order__wrapper">
 							<div class="order__wrap-title" tabindex="0" role="button">
 								<h2 class="order__title">Корзина</h2>
-
 								<span class="order__count">4</span>
 							</div>
 							<div class="order__wrap_list">
-								<ul class="order__list"></ul>
+								<ul class="order__list">
+									<li class="order__item">
+										<img class="order__image" src="images/super-hearty_burger.jpg" alt="Супер сырный" />
+										<div class="order__product">
+											<h3 class="order__product-title">Супер сырный</h3>
+											<p class="order__product-weight">512г</p>
+											<p class="order__product-price">550 <span class="currency">₽</span></p>
+										</div>
+										<div class="order__product-count count">
+											<button class="count__minus">-</button>
+											<p class="count__amount">1</p>
+											<button class="count__plus">+</button>
+										</div>
+									</li>
+									<li class="order__item">
+										<img class="order__image" src="images/french-fries.jpg" alt="Картошка фри" />
+										<div class="order__product">
+											<h3 class="order__product-title">Картошка фри</h3>
+											<p class="order__product-weight">180г</p>
+											<p class="order__product-price">245 <span class="currency">₽</span></p>
+										</div>
+										<div class="order__product-count count">
+											<button class="count__minus">-</button>
+											<p class="count__amount">2</p>
+											<button class="count__plus">+</button>
+										</div>
+									</li>
+									<li class="order__item">
+										<img class="order__image" src="images/burning_hot-dog.jpg" alt="Жгучий хот-дог" />
+										<div class="order__product">
+											<h3 class="order__product-title">Жгучий хот-дог</h3>
+											<p class="order__product-weight">245г</p>
+											<p class="order__product-price">239 <span class="currency">₽</span></p>
+										</div>
+										<div class="order__product-count count">
+											<button class="count__minus">-</button>
+											<p class="count__amount">1</p>
+											<button class="count__plus">+</button>
+										</div>
+									</li>
+								</ul>
 								<div class="order__total">
 									<p class="">Итого</p>
 									<span class="order__total-amount">1279</span>
@@ -161,11 +137,79 @@
 					<div class="catalog__wrapper">
 						<h2 class="catalog__title">Бургеры</h2>
 						<div class="catalog__wrap_list">
-							<ul class="catalog__list"></ul>
+							<ul class="catalog__list">
+								<li class="catalog__item">
+									<article class="product">
+										<img class="product__image" src="images/meat-bomb_burger.jpg" alt="Мясная бомба" />
+										<p class="product-price">689<span class="currency">₽</span></p>
+										<h3 class="product__title">
+											<button class="product__detail">Мясная бомба</button>
+										</h3>
+										<p class="product__weight">520г</p>
+										<button class="product__add" type="button">Добавить</button>
+									</article>
+								</li>
+								<li class="catalog__item">
+									<article class="product">
+										<img class="product__image" src="images/super-hearty_burger.jpg" alt="Супер сырный" />
+										<p class="product-price">550<span class="currency">₽</span></p>
+										<h3 class="product__title">
+											<button class="product__detail">Супер сырный</button>
+										</h3>
+										<p class="product__weight">512г</p>
+										<button class="product__add" type="button">Добавить</button>
+									</article>
+								</li>
+								<li class="catalog__item">
+									<article class="product">
+										<img class="product__image" src="images/hearty_burger.jpg" alt="Сытный" />
+										<p class="product-price">639<span class="currency">₽</span></p>
+										<h3 class="product__title">
+											<button class="product__detail">Сытный</button>
+										</h3>
+										<p class="product__weight">580г</p>
+										<button class="product__add" type="button">Добавить</button>
+									</article>
+								</li>
+								<li class="catalog__item">
+									<article class="product">
+										<img class="product__image" src="images/heavy-blow_burger.jpg" alt="Тяжелый удар" />
+										<p class="product-price">480<span class="currency">₽</span></p>
+										<h3 class="product__title">
+											<button class="product__detail">Тяжелый удар</button>
+										</h3>
+										<p class="product__weight">470г</p>
+										<button class="product__add" type="button">Добавить</button>
+									</article>
+								</li>
+								<li class="catalog__item">
+									<article class="product">
+										<img class="product__image" src="images/eternal-classic_burger.jpg" alt="Вечная классика" />
+										<p class="product-price">450<span class="currency">₽</span></p>
+										<h3 class="product__title">
+											<button class="product__detail">Вечная классика</button>
+										</h3>
+										<p class="product__weight">450г</p>
+										<button class="product__add" type="button">Добавить</button>
+									</article>
+								</li>
+								<li class="catalog__item">
+									<article class="product">
+										<img class="product__image" src="images/italian_burger.jpg" alt="Итальянский" />
+										<p class="product-price">560<span class="currency">₽</span></p>
+										<h3 class="product__title">
+											<button class="product__detail">Итальянский</button>
+										</h3>
+										<p class="product__weight">510г</p>
+										<button class="product__add" type="button">Добавить</button>
+									</article>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 	</body>
+	<script src="js/main.js"></script>
 </html>

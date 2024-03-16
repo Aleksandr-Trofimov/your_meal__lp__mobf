@@ -1,5 +1,4 @@
 .modal-product {
-	display: flex;
 	background-color: #fff;
 	width: 100%;
 	min-height: 100%;
@@ -42,12 +41,6 @@
 .modal-product__ingredients {
 	flex-grow: 1;
 	margin-bottom: 10px;
-}
-
-.modal-product__footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .modal-product__add {
@@ -131,6 +124,12 @@
 	.modal-product__btn {
 		flex-grow: 0;
 		width: 218px;
+	}
+
+	.modal-product__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 

@@ -44,3 +44,14 @@
 		padding: 10px;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.modal {
+		padding: 20px;
+	}
+
+	.modal_close {
+		top: 24px;
+		right: 24px;
+	}
+}
